@@ -9,6 +9,10 @@
         pyserial
         toml
         requests
+        mypy
+        ruff
+        types-requests
+        types-toml
       ]);
     in {
       devShell.x86_64-linux = pkgs.mkShell {

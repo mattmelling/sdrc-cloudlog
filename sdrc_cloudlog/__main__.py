@@ -1,4 +1,4 @@
-from .ui import App
+from .ui.app import App
 from .config import ConfigManager
 from .state import State
 from .rig import Rig

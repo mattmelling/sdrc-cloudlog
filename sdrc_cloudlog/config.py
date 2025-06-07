@@ -2,7 +2,7 @@ import tkinter
 import toml
 import os
 
-from typing import Any, Dict, Type, Callable
+from typing import Any, Dict, Type
 
 CONFIG_FILENAME = 'config.toml'
 
