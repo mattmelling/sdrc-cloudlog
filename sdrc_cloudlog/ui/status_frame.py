@@ -41,5 +41,4 @@ class StatusFrame(customtkinter.CTkFrame):
 
     def update_tx_freq_pretty(self, var, index, mode):
         f = self._state.frequency + self._config.get('rig', 'tx_offset', 0)
-        print(self._config.get('rig', 'tx_offset', 0))
         self._tx_freq_pretty_var.set(f'TX={self.format_frequency(f)}')
