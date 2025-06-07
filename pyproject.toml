@@ -10,7 +10,8 @@ dependencies = [
     "pyserial",
     "customtkinter",
     "toml",
-    "requests"
+    "requests",
+    "platformdirs"
 ]
 
 [project.scripts]

@@ -13,6 +13,7 @@
         ruff
         types-requests
         types-toml
+        platformdirs
       ]);
     in {
       devShell.x86_64-linux = pkgs.mkShell {

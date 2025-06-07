@@ -1,10 +1,11 @@
 import tkinter
 import toml
 import os
+from platformdirs import user_config_dir
 
 from typing import Any, Dict, Type
 
-CONFIG_FILENAME = 'config.toml'
+CONFIG_FILENAME = os.path.join(user_config_dir('sdrc-console', 'G4IYT'), 'config.toml')
 
 class ConfigManager:
 
@@ -12,7 +13,8 @@ class ConfigManager:
 
     def __init__(self) -> None:
         if not os.path.exists(CONFIG_FILENAME):
-            os.mknod(CONFIG_FILENAME)
+            os.makedirs(os.path.dirname(CONFIG_FILENAME), exist_ok=True)
+            open(CONFIG_FILENAME, 'w').close()
         self._variables = {}
         with open(CONFIG_FILENAME, 'r') as f:
             self._config = toml.load(f)
