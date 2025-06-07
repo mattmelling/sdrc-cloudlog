@@ -17,6 +17,7 @@ def main():
     cloudlog = Cloudlog(config, state, interval=1)
     cloudlog.start()
 
+    app.title('Cloudlog Rig Interface for SDR-Console by G4IYT')
     app.mainloop()
     rig.stop()
     cloudlog.stop()
