@@ -1,0 +1,5 @@
+pyserial
+customtkinter
+toml
+requests
+platformdir

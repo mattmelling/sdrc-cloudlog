@@ -6,13 +6,7 @@ authors = [
     { name = "Matt G4IYT", email = "matt@g4iyt.uk" }
 ]
 readme = "README.md"
-dependencies = [
-    "pyserial",
-    "customtkinter",
-    "toml",
-    "requests",
-    "platformdirs"
-]
+dependencies = {file = ["requirements.txt"]}
 
 [project.scripts]
 sdrc-cloudlog = "sdrc_cloudlog.__main__:main"
