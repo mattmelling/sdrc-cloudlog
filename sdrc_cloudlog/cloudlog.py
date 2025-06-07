@@ -14,7 +14,6 @@ class Cloudlog(BackgroundTask):
             'key': self._config.get('cloudlog', 'key', ''),
             'radio': self._config.get('cloudlog', 'radio', ''),
             'frequency': self._state.frequency + tx_off,
-            'frequency_rx': self._state.frequency,
             'power': self._config.get('defaults', 'power', ''),
             'satname': self._config.get('defaults', 'sat_name', ''),
             'timestamp': datetime.now().strftime('%Y/%m/%d %H:%M'),
@@ -22,4 +21,9 @@ class Cloudlog(BackgroundTask):
             'prop_mode': self._config.get('defaults', 'prop_mode', ''),
             'sat_name': self._config.get('defaults', 'sat_name', '')
         }
+
+        if tx_off != 0:
+            payload['frequency_rx'] = self._state.frequency
+            payload['mode_rx'] = self._state.mode
+
         requests.post(f'{cl_url}/api/radio', json=payload)
