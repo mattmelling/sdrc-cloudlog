@@ -4,7 +4,8 @@ from .state import State
 from .rig import Rig
 from .cloudlog import Cloudlog
 
-if __name__ == '__main__':
+
+def main():
     config = ConfigManager()
     state = State()
 
@@ -19,3 +20,7 @@ if __name__ == '__main__':
     app.mainloop()
     rig.stop()
     cloudlog.stop()
+
+
+if __name__ == '__main__':
+    main()

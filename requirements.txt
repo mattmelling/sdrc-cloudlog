@@ -1,4 +1,0 @@
-pyserial
-customtkinter
-toml
-requests
