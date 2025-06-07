@@ -2,7 +2,13 @@ I use this tool to synchronise SDR-Console with Cloudlog while working through Q
 
 ![Screenshot showing the tool running with SDR-Console](./img/sdrc.png)
 
+![Screenshot of defaults settings](./img/defaults.png)
+
+![Screenshot of rig settings](./img/rig.png)
+
 This makes it much easier for me to make contacts on QO-100 and ensure that I capture all the right fields, especially the TX frequency.
+
+![Screenshot of Cloudlog hardware interfaces screen](./img/hardware.png)
 
 ![Screenshot showing the frequency in Cloudlog](./img/cloudlog-overview.png)
 
