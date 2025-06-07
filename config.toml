@@ -1,0 +1,16 @@
+[cloudlog]
+url = "http://cloudlog.home.arpa/"
+key = "cl684218120944a"
+enabled = true
+radio = "SDR-Console"
+
+[rig]
+enabled = true
+baud = 57600
+tx_offset = -8089500000
+port = "COM17"
+
+[defaults]
+power = 6.0
+sat_name = "QO-100"
+prop_mode = "SAT"

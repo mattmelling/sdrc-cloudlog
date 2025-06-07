@@ -1,0 +1,4 @@
+pyserial
+customtkinter
+toml
+requests
