@@ -22,5 +22,4 @@ class Cloudlog(BackgroundTask):
             'prop_mode': self._config.get('defaults', 'prop_mode', ''),
             'sat_name': self._config.get('defaults', 'sat_name', '')
         }
-        print(payload)
         requests.post(f'{cl_url}/api/radio', json=payload)
