@@ -29,7 +29,8 @@ class StatusFrame(customtkinter.CTkFrame):
         self._tx_offset_label = customtkinter.CTkLabel(self, text='TX', font=('monospace', 12), anchor='center', textvariable=self._tx_freq_pretty_var)
         self._tx_offset_label.grid(row=1, column=1, sticky='e')
 
-        self._status_label = customtkinter.CTkLabel(self, text='Connected', font=('monospace', 12))
+        prop_mode_var = self._config.variable('defaults', 'prop_mode', '', tkinter.StringVar)
+        self._status_label = customtkinter.CTkLabel(self, font=('monospace', 12), textvariable=prop_mode_var)
         self._status_label.grid(row=1, column=2, sticky='e')
 
     def format_frequency(self, f: int) -> str:
