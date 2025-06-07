@@ -1,5 +1,5 @@
 pyserial
 customtkinter
-toml
-requests
-platformdir
+toml==0.10.2
+requests==2.31.0
+platformdirs==4.2.0
