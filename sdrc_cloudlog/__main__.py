@@ -1,8 +1,8 @@
-from .ui.app import App
-from .config import ConfigManager
-from .state import State
-from .rig import Rig
-from .cloudlog import Cloudlog
+from sdrc_cloudlog.ui.app import App
+from sdrc_cloudlog.config import ConfigManager
+from sdrc_cloudlog.state import State
+from sdrc_cloudlog.rig import Rig
+from sdrc_cloudlog.cloudlog import Cloudlog
 
 
 def main():
